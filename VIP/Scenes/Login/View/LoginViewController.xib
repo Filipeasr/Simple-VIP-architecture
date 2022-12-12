@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17700" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="VIP" customModuleProvider="target">
+            <connections>
+                <outlet property="errorMessageLabel" destination="llB-gc-IsA" id="xiZ-Jd-y59"/>
+                <outlet property="passwordTextField" destination="GDy-Qh-jrt" id="KBi-8k-7cT"/>
+                <outlet property="usernameTextField" destination="E5g-gl-nc9" id="Vfo-ZA-Hln"/>
+                <outlet property="view" destination="iN0-l3-epB" id="vkg-VQ-XW8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDZ-MH-dux">
+                    <rect key="frame" x="48" y="424" width="318" height="48"/>
+                    <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="EOK-sa-Tcw"/>
+                    </constraints>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="gLv-ov-wfu"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E5g-gl-nc9">
+                    <rect key="frame" x="48" y="284" width="318" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GDy-Qh-jrt">
+                    <rect key="frame" x="48" y="342" width="318" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llB-gc-IsA">
+                    <rect key="frame" x="48" y="520" width="318" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GDy-Qh-jrt" secondAttribute="trailing" constant="48" id="3qW-Bv-gt5"/>
+                <constraint firstItem="EDZ-MH-dux" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4k9-tn-RVB"/>
+                <constraint firstItem="E5g-gl-nc9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="48" id="94N-v5-JYx"/>
+                <constraint firstItem="llB-gc-IsA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="48" id="9Zq-U4-5HQ"/>
+                <constraint firstItem="GDy-Qh-jrt" firstAttribute="top" secondItem="E5g-gl-nc9" secondAttribute="bottom" constant="24" id="Go5-Zt-qXF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="EDZ-MH-dux" secondAttribute="trailing" constant="48" id="HMv-af-wga"/>
+                <constraint firstItem="EDZ-MH-dux" firstAttribute="top" secondItem="GDy-Qh-jrt" secondAttribute="bottom" constant="48" id="HeX-ld-Fve"/>
+                <constraint firstItem="EDZ-MH-dux" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="48" id="JhX-MA-rqq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="llB-gc-IsA" secondAttribute="trailing" constant="48" id="SlK-nD-g8h"/>
+                <constraint firstItem="GDy-Qh-jrt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="48" id="daA-bG-UQJ"/>
+                <constraint firstItem="llB-gc-IsA" firstAttribute="top" secondItem="EDZ-MH-dux" secondAttribute="bottom" constant="48" id="if9-Vr-FNr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="E5g-gl-nc9" secondAttribute="trailing" constant="48" id="vB3-y4-g7e"/>
+            </constraints>
+            <point key="canvasLocation" x="-365" y="132"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
