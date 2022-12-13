@@ -1,5 +1,5 @@
 //
-//  LoginIntegratorTest.swift
+//  LoginInteractorTest.swift
 //  VIPTests
 //
 //  Created by Filipe Rosa.
@@ -8,7 +8,7 @@
 @testable import VIP
 import XCTest
 
-class LoginIntegratorTest: XCTestCase {
+class LoginInteractorTest: XCTestCase {
     
     // MARK: - Subject under test
     

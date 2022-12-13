@@ -19,8 +19,6 @@ class LoginServiceImplementation: LoginService {
         } else {
             success("Margaret", "Hamilton", "feminino")
         }
-        
-        
     }
 }
 
